@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        /* Exercício 2 – Criando um Layout com Flexbox */
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #000000;
+            height: 50px;
+        }
+
+        .menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ffa500;
+        }
+
+        /* Exercício 1 – Estilizando um Cartão de Apresentação */
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 300px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            text-align: center;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 6px #00000033;
+        }
+
+        .card:hover {
+            background-color: #d9d9d9;
+        }
+
+        .card h1 {
+            color: #0000ff;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Exercício 2 – Criando um Layout com Flexbox -->
+    <nav class="menu">
+        <a href="#">Início</a>
+        <a href="#">Cursos</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <!-- Exercício 1 – Estilizando um Cartão de Apresentação -->
+    <div class="container">
+        <div class="card">
+            <h1>Eduardo Florenciano dos Santos</h1>
+            <p>Estudante de ADS/Engenharia de Software</p>
+            <p>Email: eduardoflorencianoo@gmail.com</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
